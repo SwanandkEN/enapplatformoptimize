@@ -23,7 +23,7 @@ Measured in ms, code for benchmark: [benchmark.py](benchmark.py).
 
 | Network        | Jetson TensorRT(time(s) FPS)     | Jetson PyTorch (time(s) FPS)|
 | -------------  |---------------------------------:|----------------------------:|
-| -------------  | Nano      |      TX2             | Nano      |      TX2        |                                   
+|                | Nano      :|      TX2             | Nano      :|      TX2        |                                   
 | ResNet18       |           |                      |           |                 |
 ## Usage
 
