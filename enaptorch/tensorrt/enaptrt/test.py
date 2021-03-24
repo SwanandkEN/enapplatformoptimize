@@ -64,7 +64,10 @@ def run(self):
     torch.cuda.current_stream().synchronize()
     t0 = time.time()
     for i in range(50):
+        tnow0 = time.time()
         outputs = module_trt(*inputs)
+        tnow = time.time()
+        print("FPS Coming: ",1/(tnow - tnow0))
     torch.cuda.current_stream().synchronize()
     t1 = time.time()
     
