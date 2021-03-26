@@ -43,7 +43,7 @@ Measured in ms, code for benchmark: [benchmark.py](benchmark.py).
 | vgg13_bn | 4.05 | 14.5 | 5.83 | 23.2 | 179 | 459 |
 | vgg16_bn | 3.13 | 11.8 | 6.72 | 27.3 | 149 | 387 |
 | vgg19_bn | 2.55 | 10.2 | 5.31 | 23.2 | 141 | 265 |
-| MobilenetV2 | 29.5 | 74 |  |  |  |  |
+| MobilenetV2 | 29.5 | 74 | 49 | 159 |  |  |
 ## How does it work?(Tensorrt)
 
 This converter works by attaching conversion functions (like ``convert_ReLU``) to the original 
