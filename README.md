@@ -39,11 +39,11 @@ Measured in ms, code for benchmark: [benchmark.py](benchmark.py).
 | vgg13 | 6.53 | 14.9 | 9.4 | 33.8 | 210 | 459 |
 | vgg16 | 3.19 | 11.8 | 7.05 | 27.5 | 158 | 374 |
 | vgg19 | 2.59 | 10.2 | 5.83 | 23.2 | 152 | 339 |
-| vgg11_bn | 8.74 | 18.4 | 9.19 | 41.7 | 210 | 500 |
-| vgg13_bn | 6.31 | 14.8 | 5.83 | 23.2 | 179 | 459 |
-| vgg16_bn | 4.96 | 12.0 | 6.72 | 27.3 | 149 | 387 |
-| vgg19_bn |  |  | 5.31 | 23.2 | 141 | 265 |
-
+| vgg11_bn | 5.76 | 18.7 | 9.19 | 41.7 | 210 | 500 |
+| vgg13_bn | 4.05 | 14.5 | 5.83 | 23.2 | 179 | 459 |
+| vgg16_bn | 3.13 | 11.8 | 6.72 | 27.3 | 149 | 387 |
+| vgg19_bn | 2.55 | 10.2 | 5.31 | 23.2 | 141 | 265 |
+| MobilenetV2 | 29.5 | 74 |  |  |  |  |
 ## How does it work?(Tensorrt)
 
 This converter works by attaching conversion functions (like ``convert_ReLU``) to the original 
