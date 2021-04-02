@@ -52,6 +52,7 @@ Measured in fps, code for benchmark: [benchmark.py](benchmark.py).
 | yolov3-tiny(darknet) | 10 | 18 | 13 | 35 |  
 | ssd_mobilenet_v1(tensorflow) | 4 | 9 | 8 | 22 |
 | ssd_mobilenet_v2(tensorflow) | 6 | 11 | 9 | 19 |
+| ssd_mobilenet_v1(mxnet) |  | 12 |  |  |
 
 ## How does it work?(Tensorrt)
 
