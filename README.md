@@ -19,8 +19,8 @@ Environment:
 * TVM 0.8dev 
 * PyTorch 1.7.1+cu101(RTX) 1.6.0(Jetson)
 
-Measured in ms, code for benchmark: [benchmark.py](benchmark.py).
-
+Measured in fps, code for benchmark: [benchmark.py](benchmark.py).
+## Image Classification
 | Model    | Nano (PyTorch) | Nano (TensorRT) | TX2 (PyTorch)    | TX2 (TensorRT)    |RTX (PyTorch)     | RTX (TensorRT)    |
 |----------|:--------------:|:---------------:|:----------------:|:-----------------:|:----------------:|:-----------------:|
 | alexnet | 30.8 | 64 | 59.2 | 152 | 610 | 1160 |
@@ -44,6 +44,15 @@ Measured in ms, code for benchmark: [benchmark.py](benchmark.py).
 | vgg16_bn | 3.13 | 11.8 | 6.72 | 27.3 | 149 | 387 |
 | vgg19_bn | 2.55 | 10.2 | 5.31 | 23.2 | 141 | 265 |
 | MobilenetV2 | 29.5 | 74 | 49 | 159 |  |  |
+
+## Object Detection
+| Model    | Nano(Tensorflow/Pytorch/mxnet)  | Nano (TensorRT) | TX2 (Tensorflow/Pytorch/mxnet)    | TX2 (TensorRT)    |
+|----------|:--------------:|:---------------:|:----------------:|:-----------------:|
+| yolov5(pytorch) | 4 | 9 | 7 | 14 |
+| yolov3-tiny(darknet) | 10 | 18 | 13 | 35 |  
+| ssd_mobilenet_v1(tensorflow) | 4 | 9 | 8 | 22 |
+| ssd_mobilenet_v2(tensorflow) | 6 | 11 | 9 | 19 |
+
 ## How does it work?(Tensorrt)
 
 This converter works by attaching conversion functions (like ``convert_ReLU``) to the original 
